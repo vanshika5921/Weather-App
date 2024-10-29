@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow - Your Local Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Weather ForeCast</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forecast</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search for a city" spellcheck="false">
+    </header>
+
+    <main>
+        <section id="current-weather">
+            <div id="weather-icon"></div>
+            <div id="weather-info">
+                
+                <h1 id="location-name">Loading...</h1>
+                <h2 id="temperature">--°C</h2>
+                <p id="weather-description">--</p>
+                <p id="humidity">Humidity: --%</p>
+                <p id="wind-speed">Wind Speed: -- km/h</p>
+            </div>
+        </section>
+
+        <section id="current-weather">
+            <h1>Weekly Weather Forecast</h1>
+            <div id="forecast-container">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
